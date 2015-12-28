@@ -53,14 +53,13 @@
         "branch-alias": {
             "dev-master": "2.8-dev"
         }
-    }
-
-    "authors": {
+    },
+    "authors": [
         {
             "name": "Juan Urios Mollá",
             "email": "multi.correo@gmail.com",
             "homepage": "http://www",
             "role": "Developer"
         }
-    }
+    ]
 }
