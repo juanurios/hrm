@@ -1,5 +1,5 @@
 {
-    "name": "symfony/hrm",
+    "name": "juanurios/hrm",
     "license": "MIT",
     "type": "project",
     "description": "HRM - Human Resources Management",
@@ -55,12 +55,12 @@
         }
     }
 
-    "authors": [
+    "authors": {
         {
             "name": "Juan Urios Mollá",
             "email": "multi.correo@gmail.com",
             "homepage": "http://www",
             "role": "Developer"
         }
-    ]
+    }
 }
