@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <nav>
+        <button>{{ campo1 }}</button>
+        <button onclick="location.href = '../app_dev.php/formulario'">{{ campo2 }}</button>
+        <button>{{ campo3 }}</button>
+    </nav>
+
+    <hr>
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+
+    <hr>
+
+    <footer>
+        Contacto: {{ email }}
+    </footer>
+</html>
