@@ -1,3 +1,7 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
 acme_user:
     resource: "@AcmeUserBundle/Resources/config/routing.yml"
     prefix:   /
@@ -10,21 +14,6 @@ acme_security:
 acme_task:
     resource: "@AcmeTaskBundle/Controller/"
     type:     annotation
-    prefix:   /
-
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-
-pagina2:
-    path: /page2/{page}
-    defaults: {_controller: AppBundle:Pagina2, page: 1}
-    requirements:
-        page: \d+
-
-pagina2_show:
-    path:    /pagina2/{slug}
-    defaults: {_controller: AppBundle:Pagina2: show}
 
 task_new:
     path: /formulario
@@ -36,27 +25,26 @@ login:
 login_check:
     pattern:   /login_check
 
-users:
-  path: /users/{user_id}
-  defaults: {controller: UsersBundle:Default:user }
-  methods: [GET]
-  requirements:
-      _format: html
-      _locale: es|en
-
-users:
-  path: /users
-  defaults: {controller: UsersBundle:Default:userlist }
-  methods: [GET]
-  requirements:
-    _format: html
-    _locale: es|en
-
-users:
-  path: /users/create
-  defaults: {controller: UsersBundle:Default:usercreate }
-  methods: [POST]
+users_show:
+    path: /users/{user_id}
+    defaults: {controller: UsersBundle:Default:user }
+    methods: [GET]
     requirements:
       _format: html
       _locale: es|en
 
+users_list:
+    path: /users
+    defaults: {controller: UsersBundle:Default:userlist }
+    methods: [GET]
+    requirements:
+        _format: html
+        _locale: es|en
+
+users_create:
+    path: /users/create
+    defaults: {controller: UsersBundle:Default:usercreate }
+    methods: [POST]
+    requirements:
+       _format: html
+       _locale: es|en

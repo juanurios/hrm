@@ -5,6 +5,8 @@ imports:
     - { resource: "@AcmeTaskBundle/Resources/config/services.yml" }
     - { resource: "@AcmeSecurityBundle/Resources/config/services.yml" }
     - { resource: "@AcmeUserBundle/Resources/config/services.yml" }
+    - { resource: "@PruebaBundle/Resources/config/services.yml" }
+
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -38,11 +40,13 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+
     globals:
         email: %contact_email%
         campo1: %menu_1%
         campo2: %menu_2%
         campo3: %menu_3%
+
 
 # Doctrine Configuration
 doctrine:
@@ -73,4 +77,3 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
-
