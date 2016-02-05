@@ -17,3 +17,8 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+    contact_email: 'multi.correo@gmail.com'
+    menu_1: 'Acceso'
+    menu_2: 'Formulario'
+    menu_3: 'En'
+
