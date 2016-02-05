@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3fb5d47-989d-4488-94fe-0a65901f98b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hrm.iml" afterPath="$PROJECT_DIR$/.idea/hrm.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/parameters_prod.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
     </list>
     <ignored path="hrm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="70" selection-end-column="26" />
+              <folding>
+                <marker date="1454606883026" expanded="true" signature="0:109" placeholder="imports:" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="16" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -76,6 +78,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="config_prod.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters_prod.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters_prod.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.17465754">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,31 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52397263">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6296296">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -170,6 +172,8 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters_prod.yml" />
       </list>
     </option>
   </component>
@@ -276,12 +280,12 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\hrm\src\Acme\SecurityBundle\Resources\views\Security" />
-      <recent name="C:\xampp\htdocs\hrm\app\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\hrm\src\AppBundle\Resources\views\Default" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hrm\app\config" />
+      <recent name="C:\xampp\htdocs\hrm\src\Acme\SecurityBundle\Resources\views\Security" />
     </key>
   </component>
   <component name="RunManager">
@@ -384,13 +388,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Default/index.twig.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -629,24 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
-          <folding>
-            <marker date="1454606883026" expanded="true" signature="0:109" placeholder="imports:" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -751,6 +730,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -759,10 +746,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52397263">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="70" selection-end-column="26" />
+          <folding>
+            <marker date="1454606883026" expanded="true" signature="0:109" placeholder="imports:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17465754">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding />
         </state>
       </provider>

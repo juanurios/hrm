@@ -1,0 +1,16 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: us-cdbr-iron-east-03.cleardb.net
+    database_port: 3306
+    database_name: heroku_b33ab820f8d6952
+    database_user: b926680333f5a5
+    database_password: 390f72e6
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 735d227cf7c6dfd58d2967ff4a0c2ca3f2874953
+    contact_email: multi.correo@gmail.com
+    menu_1: Acceso
+    menu_2: Formulario
+    menu_3: En
