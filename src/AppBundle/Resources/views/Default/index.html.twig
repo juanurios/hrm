@@ -1,5 +1,22 @@
 {% extends 'base.html.twig' %}
-{% block body %}{% endblock %}
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <section>
+                <article>
+                    Bienvenidos a la web del proyecto para el curso Symfony 2 de Imagina Formación :)
+                    Menu de opciones:
+                    <ul>
+                        <li>Login -> Página para el Login</li>
+                        <li>Formulario -> Formulario y validación de datos</li>
+                        <li>Administración -> Página de administración (solo Admins)</li>
+                        <li>Logout -> Desloguearse</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </div>
+{% endblock %}
 
 {% block stylesheets %}
 <style>

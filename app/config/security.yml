@@ -18,6 +18,13 @@ security:
 
         main:
             anonymous: ~
+            logout:
+                path:   /logout
+                target: /
+            form_login:
+                login_path:  /login
+                check_path:  /login_check
+                default_target_path: admin_home
             # activate different ways to authenticate
 
             # http_basic: ~
@@ -27,13 +34,15 @@ security:
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
 
         secured_area:
+            logout:
+                path:   /logout
+                target: /
             pattern:    ^/
             anonymous: ~
             http_basic:
                 realm: "Secured Demo Area"
-            form_login:
-                login_path:  login
-                check_path:  login_check
+
+
 
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }

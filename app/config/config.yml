@@ -46,6 +46,7 @@ twig:
         campo1: %menu_1%
         campo2: %menu_2%
         campo3: %menu_3%
+        campo4: %menu_4%
 
 
 # Doctrine Configuration

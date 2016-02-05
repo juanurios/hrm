@@ -25,26 +25,14 @@ login:
 login_check:
     pattern:   /login_check
 
-users_show:
-    path: /users/{user_id}
-    defaults: {controller: UsersBundle:Default:user }
-    methods: [GET]
-    requirements:
-      _format: html
-      _locale: es|en
+logout:
+    path: /logout
 
-users_list:
-    path: /users
-    defaults: {controller: UsersBundle:Default:userlist }
-    methods: [GET]
-    requirements:
-        _format: html
-        _locale: es|en
+users:
+    resource: "@AcmeUserBundle/Controller/"
+    type:     annotation
 
-users_create:
-    path: /users/create
-    defaults: {controller: UsersBundle:Default:usercreate }
-    methods: [POST]
-    requirements:
-       _format: html
-       _locale: es|en
+admin:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
