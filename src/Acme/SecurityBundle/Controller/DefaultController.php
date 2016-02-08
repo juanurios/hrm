@@ -12,6 +12,10 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+        $logger = $this->get('ACCESO -> REGISTRO LOGS');
+        $logger->info('LOGUEADO');
+        $logger->error('ERROR AL LOGUEAR');
+
         return $this->render('AcmeSecurityBundle:Default:index.html.twig');
     }
 }

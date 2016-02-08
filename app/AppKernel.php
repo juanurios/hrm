@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Acme\SecurityBundle\AcmeSecurityBundle(),
             new Acme\UserBundle\AcmeUserBundle(),
             new PruebaBundle\PruebaBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
 
         );
 

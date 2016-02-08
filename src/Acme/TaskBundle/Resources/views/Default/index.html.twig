@@ -1,4 +1,4 @@
-{% extends '::/default/index.html.twig' %}
+{% extends 'base.html.twig' %}
 {% block body %}
     <form action="{{ path('task_new') }}" method="post" {{ form_enctype(form) }}>
         {{ form_widget(form) }}

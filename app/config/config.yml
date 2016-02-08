@@ -36,6 +36,12 @@ framework:
     fragments:       ~
     http_method_override: true
 
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+
 # Twig Configuration
 twig:
     debug:            "%kernel.debug%"
@@ -43,10 +49,7 @@ twig:
 
     globals:
         email: %contact_email%
-        campo1: %menu_1%
-        campo2: %menu_2%
-        campo3: %menu_3%
-        campo4: %menu_4%
+
 
 
 # Doctrine Configuration

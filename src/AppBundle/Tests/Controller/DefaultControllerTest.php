@@ -15,4 +15,12 @@ class DefaultControllerTest extends WebTestCase
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertContains('Welcome to Symfony', $crawler->filter('#container h1')->text());
     }
+
+    public function testCalculoSencillo ()
+    {
+        $calc = new DefaultControllerTest();
+        $result = $calc->calculoSencillo(2,5);
+
+        $this->assertEquals(7, $result);
+    }
 }

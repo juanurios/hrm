@@ -15,4 +15,11 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir') . '/..'),
         ]);
     }
+
+    public function calculoSencillo($numero, $cantidad)
+    {
+        return $cantidad + numero;
+    }
+
+
 }
