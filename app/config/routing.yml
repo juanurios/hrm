@@ -20,8 +20,11 @@ task_new:
     defaults: {_controller: AcmeTaskBundle:Default:new}
 
 login:
+    path: /{_locale}/
     pattern:   /login
-    defaults:  { _controller: AcmeSecurityBundle:Security:login }
+    defaults:  { _controller: AcmeSecurityBundle:Security:login, _locale: en}
+    requirements:
+        _locale: en|fr|de
 login_check:
     pattern:   /login_check
 
