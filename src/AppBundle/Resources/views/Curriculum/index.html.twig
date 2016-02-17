@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Curriculum list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Education</th>
+                <th>Jobexperience</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for curriculum in curricula %}
+            <tr>
+                <td><a href="{{ path('curriculum_show', { 'id': curriculum.id }) }}">{{ curriculum.id }}</a></td>
+                <td>{{ curriculum.education }}</td>
+                <td>{{ curriculum.jobExperience }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('curriculum_show', { 'id': curriculum.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('curriculum_edit', { 'id': curriculum.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('curriculum_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
