@@ -12,7 +12,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\HttpFoundation\Response;
-
+use Symfony\Component\Routing\Annotation\Route;
+/**
+ * @Route("/")
+ */
 class SecurityController extends Controller
 {
     public function loginAction(Request $request)
@@ -38,9 +41,13 @@ class SecurityController extends Controller
             )
         );
     }
+
+    /**
+     * @Route("/hello", name="security_hello")
+     */
     public function indexAction()
     {
-        $translated = $this->get('translator')->trans('Hola mundo');
+        $translated = $this->get('translator')->trans('claveTraduccion');
         return new Response($translated);
     }
 }

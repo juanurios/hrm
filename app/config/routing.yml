@@ -1,3 +1,9 @@
+root:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /en
+        permanent: true
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
@@ -9,22 +15,21 @@ acme_user:
 acme_security:
     resource: "@AcmeSecurityBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /{_locale}/security
 
 acme_task:
     resource: "@AcmeTaskBundle/Controller/"
     type:     annotation
 
 task_new:
-    path: /formulario
+    path: /{_locale}/formulario
     defaults: {_controller: AcmeTaskBundle:Default:new}
 
 login:
-    path: /{_locale}/
-    pattern:   /login
+    pattern:   /{_locale}/login
     defaults:  { _controller: AcmeSecurityBundle:Security:login, _locale: en}
     requirements:
-        _locale: en|fr|de
+        _locale: en|es
 login_check:
     pattern:   /login_check
 
@@ -34,8 +39,11 @@ logout:
 users:
     resource: "@AcmeUserBundle/Controller/"
     type:     annotation
+    prefix:   /{_locale}
+
 
 admin:
     resource: "@AppBundle/Controller/"
     type:     annotation
+    prefix:   /{_locale}
 
